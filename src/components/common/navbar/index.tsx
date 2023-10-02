@@ -1,9 +1,10 @@
 import React from 'react';
 import { useTheme } from 'next-themes';
 import ThemeSwitcher from '../theme-switcher';
+import { SismoConnect } from '~/components';
 
 // Icons
-import { PiAirplaneTakeoffDuotone } from 'react-icons/pi';
+import { PiGiftBold } from 'react-icons/pi';
 
 const Navbar = () => {
 	const { theme } = useTheme();
@@ -11,11 +12,12 @@ const Navbar = () => {
 		<div className='p-4 px-6'>
 			<div className='flex flex-row items-center justify-between'>
 				<div className='flex flex-row items-center gap-2'>
-					<PiAirplaneTakeoffDuotone className='text-4xl text-blue-500' />
+					<PiGiftBold className='text-4xl text-blue-500' />
 					<div className='hidden text-2xl font-bold sm:flex'>Sismo Swag Form</div>
 				</div>
 				<div className='flex flex-row items-center gap-2'>
 					<ThemeSwitcher />
+					<SismoConnect />
 				</div>
 			</div>
 		</div>
