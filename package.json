@@ -1,5 +1,5 @@
 {
-  "name": "web3-hackathon-starter",
+  "name": "sismo-swag-form",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -43,5 +43,5 @@
   "ct3aMetadata": {
     "initVersion": "7.20.2"
   },
-  "packageManager": "npm@9.6.7"
+  "packageManager": "pnpm@8.8.0"
 }
