@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@ant-design/cssinjs": "^1.17.0",
+    "@sismo-core/sismo-connect-client": "^0.0.23",
     "@sismo-core/sismo-connect-react": "^0.0.23",
     "@sismo-core/sismo-connect-server": "^0.0.23",
     "@t3-oss/env-nextjs": "^0.6.0",

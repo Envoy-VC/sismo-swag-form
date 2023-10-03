@@ -5,6 +5,11 @@ import {
 	ClaimType,
 } from '@sismo-core/sismo-connect-react';
 
+import {} from '@sismo-core/sismo-connect-client';
+
+// Config
+import { env } from '~/env.mjs';
+
 // Types
 import type { SismoConnectResponse } from '@sismo-core/sismo-connect-react';
 
@@ -22,7 +27,7 @@ const SismoConnect = () => {
 	return (
 		<SismoConnectButton
 			config={{
-				appId: '0xf4977993e52606cfd67b7a1cde717069', // replace with your appId
+				appId: env.NEXT_PUBLIC_SISMO_APP_ID,
 				vault: {
 					// For development purposes insert the Data Sources that you want to impersonate here
 					// Never use this in production
