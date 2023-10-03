@@ -3,6 +3,7 @@ import {
 	ClaimType,
 	SismoConnect,
 } from '@sismo-core/sismo-connect-client';
+import clsx from 'clsx';
 
 // Types
 import type {
@@ -41,6 +42,11 @@ import { Button } from 'antd';
 export const CustomSismoConnectButton = () => {
 	return (
 		<Button
+			size='large'
+			type='primary'
+			className={clsx(
+				'flex items-center justify-center bg-[#1677ff] !py-6 !text-2xl'
+			)}
 			onClick={() => {
 				sismoConnect.request({
 					auth: twitterRequest,
@@ -48,7 +54,6 @@ export const CustomSismoConnectButton = () => {
 					signature: { message: 'Swag form Verification' },
 				});
 			}}
-			size='large'
 		>
 			Verify with Sismo
 		</Button>
